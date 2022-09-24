@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="387.0" prefWidth="657.0" spacing="20.0" stylesheets="@karatsuba.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.karatsubfx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="20.0" prefWidth="327.0" spacing="120.0">
+      <children>
+         <Label prefHeight="19.0" prefWidth="79.0" text="Number 1">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Label>
+         <Label prefHeight="17.0" prefWidth="73.0" text="Number 2">
+            <font>
+               <Font name="System Bold" size="13.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <HBox prefHeight="30.0" prefWidth="385.0" spacing="30.0">
+      <children>
+         <TextField fx:id="number1" alignment="CENTER" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="130.0" promptText="input a number" styleClass="text-field-1" stylesheets="@karatsuba.css">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+               <Font name="Arial Bold" size="12.0" />
+            </font>
+         </TextField>
+         <Label text="x" textAlignment="CENTER">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="number2" alignment="CENTER" layoutX="135.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="130.0" promptText="input a number" styleClass="text-field-2" stylesheets="@karatsuba.css">
+            <cursor>
+               <Cursor fx:constant="TEXT" />
+            </cursor>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+         </TextField>
+      </children>
+      <padding>
+         <Insets left="30.0" />
+      </padding>
+   </HBox>
+
+    <Label fx:id="welcomeText" alignment="CENTER" prefHeight="91.0" prefWidth="438.0" stylesheets="@karatsuba.css" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></Label>
+    <Button fx:id="onCalculateButtonClick" onAction="#onCalculateButtonClick" onMouseClicked="#onCalculateButtonClick" stylesheets="@karatsuba.css" text="Calculate">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+   <opaqueInsets>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </opaqueInsets>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</VBox>
